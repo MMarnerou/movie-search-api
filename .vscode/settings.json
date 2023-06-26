@@ -1,0 +1,10 @@
+{
+  "editor.linkedEditing": true,
+  "prettier.vueIndentScriptAndStyle": true,
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "notebook.formatOnSave.enabled": true,
+  "php.validate.run": "onType",
+  "editor.foldingImportsByDefault": false,
+  "javascript.updateImportsOnFileMove.enabled": "always"
+}

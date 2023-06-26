@@ -1,9 +1,11 @@
+import * as Styled from "./Header.styled.js";
+import React from "react";
 
 const Header = () => {
- 
-    return <div>
-        test
-    </div>
-}
+  return (
+    <Styled.Header>
+    </Styled.Header>
+  );
+};
 
-export {Header}
+export { Header };
