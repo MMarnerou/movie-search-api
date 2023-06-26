@@ -1,16 +1,22 @@
 import * as Styled from "./Results.styled";
 import React from "react";
 import Result from "../Result/Result";
+import { Tag } from "primereact/tag";
 
-const Results = ({ loading, errorMessage, results = [] }) => {
+const Results = ({ results = [] }) => {
   return (
     <Styled.Results>
-      {loading && !errorMessage ? (
-        <span>Please wait...</span>
-      ) : errorMessage ? (
-        <div className="errorMessage">{errorMessage}</div>
+      <Styled.Title>
+        All Results <Tag title="">{results.length}</Tag>
+      </Styled.Title>
+      {results.length > 0 ? (
+        <Styled.ResultsContainer>
+          {results.map((item, index) => {
+            return <Result key={index} item={item} />;
+          })}
+        </Styled.ResultsContainer>
       ) : (
-        results.map((item, index) => <Result key={index} item={item} />)
+        <Styled.NoResultsContainer>No movies found</Styled.NoResultsContainer>
       )}
     </Styled.Results>
   );
