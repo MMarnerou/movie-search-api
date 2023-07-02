@@ -6,5 +6,10 @@
   "notebook.formatOnSave.enabled": true,
   "php.validate.run": "onType",
   "editor.foldingImportsByDefault": false,
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.autoIndent": "advanced",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.formatOnPaste": true,
+  "diffEditor.codeLens": true
 }

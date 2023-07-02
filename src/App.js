@@ -17,7 +17,9 @@ const App = () => {
     setLoading(true);
     setSearchValue(text);
     setErrorMessage(null);
-    fetch(`${MOVIE_API_PATH}${text}`)
+    fetch(`${MOVIE_API_PATH}${text}`, {
+      mode: "cors",
+    })
       .then((response) => response.json())
       .then((jsonResponse) => {
         if (jsonResponse.Response === "True") {

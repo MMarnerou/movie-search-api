@@ -25,4 +25,10 @@ export const Search = styled.form`
     left: 50%;
     tranform: translate(-50%, -50%);
   }
+
+  .p-inputtext,
+  .p-button {
+    border-radius: 0;
+  }
+
 `;
