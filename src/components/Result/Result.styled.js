@@ -17,7 +17,9 @@ export const ImgBlock = styled.img`
 
 export const ResultText = styled.p`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  width: 200px;
+  justify-content: space-between;
 `;
 
 export const Tag = styled(PrimeTag)`
