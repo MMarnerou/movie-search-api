@@ -10,7 +10,10 @@ const TopResults = ({ results = [] }) => {
           <Styled.Title>Top {results.length} Results</Styled.Title>
           <Styled.TopResultsContainer>
             {results.map((item, index) => {
-              return <Result key={index} item={item} />;
+              return (
+                item.Poster &&
+                item.Poster !== "" && <Result key={index} item={item} />
+              );
             })}
           </Styled.TopResultsContainer>
         </Styled.TopResults>

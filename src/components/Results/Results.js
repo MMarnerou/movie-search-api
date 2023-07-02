@@ -12,7 +12,10 @@ const Results = ({ results = [] }) => {
       {results.length > 0 ? (
         <Styled.ResultsContainer>
           {results.map((item, index) => {
-            return <Result key={index} item={item} />;
+            return (
+              item.Poster &&
+              item.Poster !== "" && <Result key={index} item={item} />
+            );
           })}
         </Styled.ResultsContainer>
       ) : (

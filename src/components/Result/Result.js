@@ -3,7 +3,6 @@ import React from "react";
 
 const Result = ({ item }) => {
   const handleOnClick = () => {
-    console.log(item);
     const url = `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&i=${item.imdbID}`;
     fetch(url, {
       mode: "cors",
